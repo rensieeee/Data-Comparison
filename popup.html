@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=8"/>
+    <title>Data comparison</title>
+</head>
+<body>
+    <script src="popup.js"></script>
+    <form id="searchdata">
+        <p><label for="tag"><strong>The desired html tag to find:</strong></label><br>
+        <input type="text" id="tag" name="tag" value=""/></p>
+        <p><label for="url"><strong>The URL link of the desired database: </strong></label><br>
+        <input type="text" id="url" name="url" value=""/></p>
+        <p><input id="save" type="button" value="Find Data"/></p>
+    </form>
+    <strong>These are the acquired HTML elements:</strong>
+    <p id="HTMLelements"></p>
+    <strong>And this is the source code:</strong>
+    <p id="TextElements"></p>
+    <strong>These elements are from the Azure database:</strong>
+    <p id="Local"></p>
+    <strong>These elements are similar in both sources:</strong>
+    <p id="Similar"></p>
+    <strong>These elements differ:</strong>
+    <p id="Different"></p>
+</body>
+</html>

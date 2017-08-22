@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Data comparisons",
+  "description": "Compare data between a webpage and an Azure Database",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+	{"matches": ["http://*/", "https://*/"],
+	"js": ["content_script.js"]}
+  ],
+  "permissions": [
+	"tabs", "http://*/", "https://*/", "file://*"
+  ]
+}
